@@ -37,8 +37,8 @@ local coal_to_heavy_recipe = {
 		quaternary = { 0.2, 0.2, 0.2 } -- plume core color (oil tint)
 	},
 	ingredients = {
-		{ type = "item",  name = "coal",      amount = 1 },
-		{ type = "fluid", name = "crude-oil", amount = 5,  fluidbox_index = 1 },
+		{ type = "item",  name = "coal",      amount = 2 },
+		{ type = "fluid", name = "crude-oil", amount = 20, fluidbox_index = 1 },
 		{ type = "fluid", name = "steam",     amount = 25, fluidbox_index = 2 }
 	},
 	results = {

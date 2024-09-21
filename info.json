@@ -6,5 +6,5 @@
   "contact": "thetaurunti@gmail.com",
   "factorio_version": "1.1",
   "dependencies": ["base >= 1.1"],
-  "description": "Play without oil wells! Unintrusively adds methods of extracting Crude and Heavy Oil from coal, and optionally can change Coal Liquefaction into an advanced Crude Oil extraction recipe."
+  "description": "Play without oil wells! Unintrusively adds methods of extracting Crude and Heavy Oil from coal, and includes a recommended - but optional - buff for Coal Liquefaction suited to the mid/late game."
 }
