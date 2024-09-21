@@ -1,0 +1,5 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 2024-09-20
+  Features:
+    - Initial release met by glorious unending applause from adoring fans one and all
