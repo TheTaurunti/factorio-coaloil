@@ -7,5 +7,5 @@ local function allow_recipe_productivity(recipe_name)
 	end
 end
 
-allow_recipe_productivity("co_coal-to-crude-oil")
+--allow_recipe_productivity("co_coal-to-crude-oil")
 allow_recipe_productivity("co_coal-to-heavy-oil")

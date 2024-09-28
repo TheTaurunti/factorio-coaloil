@@ -68,6 +68,8 @@ then
 			{ type = "fluid", name = "heavy-oil", amount = 65,  fluidbox_index = 1 },
 			{ type = "fluid", name = "light-oil", amount = 35,  fluidbox_index = 2 }
 		}
+
+		coal_liquefaction.energy_required = 2.5
 	end
 end
 
