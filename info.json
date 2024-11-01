@@ -1,10 +1,10 @@
 {
   "name": "CoalOil",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "title": "Coal Oil",
   "author": "Taurunti",
   "contact": "thetaurunti@gmail.com",
-  "factorio_version": "1.1",
-  "dependencies": ["base >= 1.1"],
-  "description": "Play without oil wells! Unintrusively adds methods of extracting Crude and Heavy Oil from coal, and includes a recommended - but optional - buff for Coal Liquefaction suited to the mid/late game."
+  "factorio_version": "2.0",
+  "dependencies": ["base >= 2.0"],
+  "description": "Play without oil wells! Unintrusively adds methods of extracting Crude and Heavy Oil from coal, and includes a secondary Coal Liquefaction recipe better suited to exclusively using coal for petroleum products."
 }
