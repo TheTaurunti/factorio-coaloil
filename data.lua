@@ -30,36 +30,34 @@ data:extend { coal_to_crude_recipe }
 
 -- Turn coal directly to heavy, no byproducts.
 -- > Concept is for lower-throughput lube applications
--- Space age adds this on vulcanus, so no need to add my own when that is present.
-if (not mods["space-age"])
-then
-  local coal_to_heavy_recipe = {
-    type = "recipe",
-    name = "co_coal-to-heavy-oil",
-    icon = "__base__/graphics/icons/fluid/heavy-oil.png",
-    icon_size = 64,
-    crafting_machine_tint = {
-      primary = { 0.58, 0.30, 0.12 },  -- heavy oil
-      secondary = { 0, 0, 0 },         -- oil
-      tertiary = { 0.79, 0.65, 0.56 }, -- plume edge color (heavy oil tint)
-      quaternary = { 0.2, 0.2, 0.2 }   -- plume core color (oil tint)
-    },
-    ingredients = {
-      { type = "item",  name = "coal",      amount = 2 },
-      { type = "fluid", name = "crude-oil", amount = 20,  fluidbox_index = 1 },
-      { type = "fluid", name = "steam",     amount = 250, fluidbox_index = 2 }
-    },
-    results = {
-      { type = "fluid", name = "heavy-oil", amount = 20 },
-    },
-    category = "chemistry",
-    subgroup = "fluid-recipes",
-    energy_required = 5,
-    allow_decomposition = false
-  }
-  table.insert(added_recipes, { recipe = coal_to_heavy_recipe, tech = "advanced-oil-processing" })
-  data:extend { coal_to_heavy_recipe }
-end
+-- This mod conflicts with the intended vulcanus experience no matter...
+-- ... what I do, so I just won't worry about adding my own coal -> heavy recipe
+local coal_to_heavy_recipe = {
+  type = "recipe",
+  name = "co_coal-to-heavy-oil",
+  icon = "__base__/graphics/icons/fluid/heavy-oil.png",
+  icon_size = 64,
+  crafting_machine_tint = {
+    primary = { 0.58, 0.30, 0.12 },  -- heavy oil
+    secondary = { 0, 0, 0 },         -- oil
+    tertiary = { 0.79, 0.65, 0.56 }, -- plume edge color (heavy oil tint)
+    quaternary = { 0.2, 0.2, 0.2 }   -- plume core color (oil tint)
+  },
+  ingredients = {
+    { type = "item",  name = "coal",      amount = 2 },
+    { type = "fluid", name = "crude-oil", amount = 20,  fluidbox_index = 1 },
+    { type = "fluid", name = "steam",     amount = 250, fluidbox_index = 2 }
+  },
+  results = {
+    { type = "fluid", name = "heavy-oil", amount = 20 },
+  },
+  category = "chemistry",
+  subgroup = "fluid-recipes",
+  energy_required = 5,
+  allow_decomposition = false
+}
+table.insert(added_recipes, { recipe = coal_to_heavy_recipe, tech = "advanced-oil-processing" })
+data:extend { coal_to_heavy_recipe }
 
 
 local new_coal_liquefaction = table.deepcopy(data.raw["recipe"]["coal-liquefaction"])
